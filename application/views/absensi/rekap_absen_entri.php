@@ -121,7 +121,7 @@ if (sizeof($row)==0){
 	<td><?=$i?><input type="hidden" name="awal_jml_masuk_<?=$i?>" id="awal_jml_masuk_<?=$i?>" value="<?=$jmlHariKerja?>" readonly></td>
 	<td><?=$hasil->NIK?><input type="hidden" name="awal_alpa_<?=$i?>" id="awal_alpa_<?=$i?>" value="0"></td>
 	<td><?=str_replace(" ","&nbsp;",$hasil->NAMA)?><input type="hidden" name="nik_<?=$i?>" id="nik_<?=$i?>" value="<?=$hasil->NIK?>"></td>
-	<td><?=form_input(array('name'=>'jml_masuk_'.$i,'id'=>'jml_masuk_'.$i,'class'=>'myform-control','size'=>10, 'value'=>$jmlHariKerja));?></td>
+	<td><?=form_input(array('name'=>'jml_masuk_'.$i,'id'=>'jml_masuk_'.$i,'class'=>'myform-control','size'=>10, 'value'=>$jmlHariKerja, "readonly"=>true));?></td>
 	<td><?=form_input(array('name'=>'cuti_'.$i,'id'=>'cuti_'.$i,'class'=>'myform-control','size'=>10,  'value'=>0, 'onchange'=>"setJmlMasuk(this, '$i')"));?></td>
 	<td><?=form_input(array('name'=>'ijin_'.$i,'id'=>'ijin_'.$i,'class'=>'myform-control','size'=>10,  'value'=>$jml_ijin, 'onchange'=>"setJmlMasuk(this, '$i')"));?></td>
 	<td><?=form_input(array('name'=>'sakit_'.$i,'id'=>'sakit_'.$i,'class'=>'myform-control','size'=>10,  'value'=>$jml_sakit, 'onchange'=>"setJmlMasuk(this, '$i')"));?></td>

@@ -20,7 +20,7 @@
 		<div class="form-group">
 			<label for="cabang" class="col-sm-4 control-label">Status</label>
 			<div class="col-sm-8">
-			<?php echo form_dropdown('status',array('1'=>'Disetujui', '0'=>'Tolak/Belum diproses'),'','id="status" class="form-control" ');?>
+			<?php echo form_dropdown('status',array('0'=>'Tolak/Belum diproses', '1'=>'Disetujui'),'','id="status" class="form-control" ');?>
 				
 			</div>
 		</div>

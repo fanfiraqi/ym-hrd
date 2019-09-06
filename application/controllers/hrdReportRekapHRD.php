@@ -36,7 +36,7 @@ class hrdReportRekapHRD extends MY_App {
 		$data['arrBulan'] = $this->arrBulan2;
 		$data['arrThn'] = $this->getYearArr();
 		$data['options'] = $arrayO;
-		$this->template->set('pagetitle','Rekap Data HRD Bulanan ');		
+		$this->template->set('pagetitle','Rekap HRD Bulanan ');		
 		$this->template->load('default','fhrdReport/rekapFilter',$data);
 	}
 	
@@ -88,7 +88,7 @@ class hrdReportRekapHRD extends MY_App {
 				//$nmTable="v_cuti";
 				$nmTable=" (SELECT i.nik, CAST(`i`.`CREATED_DATE` AS DATE) AS `TGL_TRANS`, TGL_AWAL, TGL_AKHIR, JML_HARI, KETERANGAN, APPROVED, APPROVED_BY, APPROVED_DATE, `i`.`JENIS_CUTI`    AS `JENIS_CUTI`, `i`.`SUB_CUTI`      AS `SUB_CUTI`,   `t`.`VALUE1`        AS `JENISCUTI1`,   IF (`t`.`ID_REFF`>1, `t2`.`VALUE1`, '')       AS `JENISCUTI2`,   `t2`.`ID_REFF`      AS `ID_REFF` FROM `cuti` `i`      LEFT JOIN `gen_reff` `t`       ON `t`.`ID_REFF` = `i`.`JENIS_CUTI`    RIGHT JOIN `gen_reff` `t2`      ON `t2`.`ID_REFF` = `i`.`SUB_CUTI` WHERE `t`.`REFF` = 'JENISCUTI'        AND `t2`.`REFF` = 'CUTIKHUSUS') ";
 				$fieldKey=array('TGL_AWAL','TGL_AKHIR');
-				$title="Rekap Data Permohonan Cuti";
+				$title="Rekap HRD Data Permohonan Cuti";
 				$namafile="rekap_cuti_".$thn."_".$bln;
 				break;
 			case "lembur":

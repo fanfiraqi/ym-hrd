@@ -187,4 +187,9 @@ class common_model extends MY_Model {
 		//return $new."#".intval($num)."#idk=".$idk."#".ltrim($kanan, '0')."#".$old;
 		return $new;
 	}
+
+	public function getDataGenReff() {
+		$query = $this->db->query("Select * from gen_reff where REFF = 'STSPEGAWAI'")->result();
+		return $query;
+	}
 }

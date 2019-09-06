@@ -83,7 +83,6 @@ if (date('d')>=19 && date('d')<=date('t')){ //21-last day && role admin/mgr pusa
 					dataType: 'json',
 					timeout	: 3000,  
 					success	: function(res){
-						console.log(res);
 						if (res.status=='success'){
 							bootbox.alert("data upload absensi berhasil dihapus");
 						}						

@@ -48,6 +48,7 @@ class employee extends MY_App {
 			$data['cabang'] =$this->common_model->getCabang($this->session->userdata('auth')->id_cabang);
 		}
 		
+		$data['genref'] = $this->common_model->getDataGenReff();
 		$data['divisi'] = array();		
 		$this->template->load('default','employee/index',$data);
 	}
@@ -334,13 +335,14 @@ class employee extends MY_App {
 			
 			$aaData = array();
 			foreach($query as $row){
-				$rsname=$this->gate_db->query("SELECT (SELECT kota FROM mst_cabang WHERE id_cabang=".$row->ID_CABANG.") NAMA_CABANG, (SELECT nama_div FROM mst_divisi WHERE id_div=".($row->ID_DIV=="" || empty($row->ID_DIV)?1:$row->ID_DIV).") NAMA_DIV ,(SELECT nama_jab FROM mst_jabatan WHERE id_jab=".($row->ID_JAB==""|| empty($row->ID_JAB)?36:$row->ID_JAB).") NAMA_JAB ")->row();
+				$rsname=$this->gate_db->query("SELECT (SELECT kota FROM mst_cabang WHERE id_cabang=".$row->ID_CABANG.") NAMA_CABANG, (SELECT nama_div FROM mst_divisi WHERE id_div=".($row->ID_DIV=="" || empty($row->ID_DIV)?1:$row->ID_DIV).") NAMA_DIV ,(SELECT nama_jab FROM mst_jabatan WHERE id_jab=".($row->ID_JAB==""|| empty($row->ID_JAB)?36:$row->ID_JAB).") NAMA_JAB, (SELECT laz_tasharuf FROM mst_jabatan WHERE id_jab=".($row->ID_JAB==""|| empty($row->ID_JAB)?36:$row->ID_JAB).") LAZ_TASHARUF ")->row();
 				$aaData[] = array(
 					'NIK'=>$row->NIK,
 					'NAMA'=>$row->NAMA,
 					'NAMA_CABANG'=>$rsname->NAMA_CABANG,
 					'NAMA_DIV'=>$rsname->NAMA_DIV,
 					'NAMA_JAB'=>$rsname->NAMA_JAB,
+					'LAZ_TASHARUF'=>$rsname->LAZ_TASHARUF,
 					'ACTION'=>'<a href="'.base_url('employee/view/'.$row->ID).'"><i class="fa fa-eye" title="Lihat Detail"></i></a> | 
 						<a href="'.base_url('employee/edit/'.$row->ID).'"><i class="fa fa-pencil" title="Edit"></i></a>'
 				);
@@ -1098,6 +1100,27 @@ class employee extends MY_App {
 		}
 		echo json_encode($respon);
 	}
+
+	public function comboDivByStatus($emptyval=true){
+		$id_cabang = $this->input->post('cabang');
+		//$id_cabang = 1;
+		$query = $this->gate_db->select('j.ID_DIV,j.NAMA_DIV')
+			->join('mst_divisi j','j.id_div=s.id_div','left')
+			->where(array('s.id_cab'=>$id_cabang))
+			->group_by('s.id_div')
+			->get('mst_struktur s')->result_array();
+		//debug_last();
+		$respon = new StdClass();
+		$respon->status = 0;
+		if (!empty($query)){
+			if (!$emptyval){
+				array_unshift($query,array('ID_DIV'=>0,'NAMA_DIV'=>'--- Semua Divisi ---'));
+			}
+			$respon->status = 1;
+			$respon->data = $query;
+		}
+		echo json_encode($respon);
+	}
 	
 	public function comboJabByDiv(){
 		$id_cabang = $this->input->post('cabang');
@@ -1315,8 +1338,6 @@ class employee extends MY_App {
 
 function xlsx(){
 		$str = "select * from pegawai where status_aktif=1 ";
-		$cabang=$this->input->get('cabang');
-		$search=$this->input->get('search');
 		if (!empty($cabang)){
 			$str .= " AND ID_CABANG=".$cabang." ";
 		}
@@ -1328,7 +1349,7 @@ function xlsx(){
 			$str .= " AND NAMA like '%".$search."%' ";
 		}
 		$result = $this->db->query($str)->result();
-		echo print_r($result)."<br><br>";
+		
 		$mydata=array();
 		$i=0;
 		foreach($result as $hasil){ 
@@ -1337,7 +1358,7 @@ function xlsx(){
 			$i++;
 		}
 		$arr=(object)$mydata;
-		//echo print_r($mydata);
+	
 	    //judul file XLS
 		$title = "DATA PEGAWAI YATIM MANDIRI";
 		
@@ -1362,11 +1383,15 @@ function xlsx(){
 		$xlsfile = "rekappeg.xls";
 		
 		if (!empty($result)){
-			//$this->commonlib->printXLS($title,$arr,$headertext,$rowitem,$xlsfile);
-			echo print_r($arr);
+			$this->commonlib->printXLS($title,$arrs,$headertext,$rowitem,$xlsfile);
+			// print_r($arr);	
 		} else {
 			echo "XLSX Failed. No Valid Data";
 		}
+
+			// $this->commonlib->printXLS($title,$arr,$headertext,$rowitem,$xlsfile);
+
+		
 		
 }
 	function xlsx_(){

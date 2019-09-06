@@ -343,8 +343,7 @@ class commonlib {
 			$sheet->getCellByColumnAndRow($col,$row)->setValueExplicit($rownum, PHPExcel_Cell_DataType::TYPE_NUMERIC);
 			$col++;
 			foreach($rowitem as $item){
-				$sheet->getCellByColumnAndRow($col,$row)->setValueExplicit($data->$item, PHPExcel_Cell_DataType::TYPE_STRING);
-				$col++;				
+				$sheet->getCellByColumnAndRow($col,$row)->setValueExplicit($data->$item, PHPExcel_Cell_DataType::TYPE_STRING);$col++;				
 			}
 			$row++;
 			$rownum++;

@@ -1,7 +1,10 @@
-<?php errorHandler();?>
+<?php errorHandler(); ?>
 <ul class="nav nav-tabs" id="myTab">
   <li><a href="#info" data-toggle="tab">Informasi Utama</a></li>
 </ul>
+
+
+
 
 <div class="tab-content"  style="padding : 10px;">
   <div class="tab-pane" id="info">
@@ -14,7 +17,7 @@
 			<div class="clearfix"></div>
 		</div>
 	<div class="panel-wrapper collapse in">
-	<div  class="panel-body row pa-0">
+	<div  class="panel-body row pa-0 m-0-cus">
 		<br>
 		<div class="row">
 			<div class="col-md-6">
@@ -37,7 +40,7 @@
 					<label for="tglaktif" class="col-sm-4 control-label">Tanggal Masuk* </label>
 					<div class="col-sm-8">
 						<div class="input-group">
-							<?=form_input(array('name'=>'tglmasuk','id'=>'tglmasuk','class'=>'form-control','readonly'=>'readonly','value'=>revdate($row->TGL_AKTIF)));?>
+							<?=form_input(array('name'=>'tglmasuk','id'=>'tglmasuk','class'=>'form-control','readonly'=>'readonly','value'=>revdate($row->TGL_AWAL_KONTRAK)));?>
 							<div class="input-group-addon"><span id="bttglaktif" class="fa fa-calendar"></span></div>
 						</div>
 					</div>
@@ -192,7 +195,7 @@
 </div>
 
 <div class="panel-wrapper collapse in">
-<div  class="panel-body row pa-0"><br>
+<div  class="panel-body row pa-0 m-0-cus"><br>
 
 <div class="row">
 	<div class="col-md-12">
@@ -243,7 +246,7 @@
 <div class="clearfix"></div>
 </div>
 <div class="panel-wrapper collapse in">
-<div  class="panel-body row pa-0"><br>
+<div  class="panel-body row pa-0 m-0-cus"><br>
 
 <div class="row">
 	<div class="col-md-12">
@@ -400,7 +403,7 @@
 -->	
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-6 mb-2-cus mt-2-cus">
 		
 			<?php 
 			$btsubmit = array(
@@ -430,11 +433,39 @@
 $(function() {
     $( "#tglawal" ).datepicker({
 		dateFormat: 'dd-mm-yy',
-		onSelect: function( selectedDate ) {
-			$( "#tglakhir" ).datepicker( "option", "minDate", selectedDate);
+		onSelect: function( dateText, instance ) {
+			date = $.datepicker.parseDate(instance.settings.dateFormat, dateText, instance.settings);
+
+			var valueSts = $( "#stspegawai option:selected" ).text();
+			var setD = 1;
+			console.log(valueSts)
+
+			if(valueSts == 'TRAINING 3 BULAN I') {
+				setD = 3;
+			} else if(valueSts == 'TRAINING 3 BULAN II') {
+				setD = 6;
+			} else if(valueSts == 'KONTRAK I (1,5 THN/18 BLN)') {
+				setD = 18;
+			} else if(valueSts == 'KONTRAK II (1,5 THN/18 BLN)') {
+				setD = 36;
+			} else if(valueSts == 'PRA KARYAWAN TETAP 2 THN') {
+				setD = 24;
+			}
+
+            date.setMonth(date.getMonth() + setD);
+			$("#tglakhir").datepicker("setDate", date);
+			// is default $( "#tglakhir" ).datepicker( "option", "minDate", selectedDate);
 			//$( "#tglaktif" ).datepicker( "setDate",selectedDate);
 		}
 	});
+
+	// $("#stspegawai").change(function() {
+	// 	var id = $(this).children(":selected").attr("value");
+	// 	return id;
+	// });
+
+	$("#stspegawai").change($(this).children(":selected").attr("value"));
+	
 	$("#bttglawal").click(function() {
 		$("#tglawal").datepicker("show");
 	});

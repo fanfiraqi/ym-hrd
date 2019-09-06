@@ -17,7 +17,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<div class="form-group"><label  class="col-sm-4 control-label">INDUK DIVISI</label>
-			<div class="col-sm-8"><?=form_input(array('name'=>'nama_induk','id'=>'nama_induk','class'=>'typeahead form-control'));?><input type="hidden" name="id_induk" id="id_induk">*Ketik Nama Divisi</div>
+			<div class="col-sm-8"><?=form_input(array('name'=>'nama_induk','id'=>'nama_induk','class'=>'form-control'));?><input type="hidden" name="id_induk" id="id_induk">*Ketik Nama Divisi</div>
 		</div>
 	</div>
 </div>

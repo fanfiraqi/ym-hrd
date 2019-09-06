@@ -12,9 +12,8 @@
 <hr />
 <div class="row">
 	<div class="col-sm-6">
-		<div class="form-group">
-			<label for="cabang" class="col-sm-4 control-label">Cabang </label>
-			<div class="col-sm-8">
+		<label for="cabang" class="col-sm-4 control-label">Cabang </label>
+		<div class="col-sm-8">
 			<?php
 				if ($this->session->userdata('auth')->id_cabang=="1"){
 					echo form_dropdown('cabangfilter',$cabang,'1','id="cabangfilter" class="form-control" ');
@@ -22,11 +21,24 @@
 					echo '<input type="hidden" name="cabangfilter" id ="cabangfilter" value="'.$cabang->id_cabang.'"/>';
 					echo '<label  class="col-sm-4 control-label">'.$cabang->kota.'</label>';
 				}
-				?>
-				
-			</div>
+			?>	
 		</div>
-	</div>	
+	</div>
+</div>
+
+<div class="row" style="margin-top: 12px; margin-bottom: 25px;">
+	<div class="col-sm-6">
+		<label for="cabang" class="col-sm-4 control-label">Status Pegawai </label>
+		<div class="col-sm-8">
+			<?php
+				echo '<select name="statusfilter" id="statusfilter" class="form-control">';
+				foreach ($genref as $row) {
+					echo '<option value="'.$row->ID_REFF.'">'.$row->VALUE1.'</option>';
+				}
+				echo '</select>';
+			?>	
+		</div>
+	</div>
 </div>
 <hr />
  <div class="row" >
@@ -39,6 +51,7 @@
 				<th>Cabang</th>
 				<th>Divisi</th>
 				<th>Jabatan</th>
+				<th>Kelompok Jabatan</th>
 				<th>Action</th>
 			</tr>
 		</thead>
@@ -66,6 +79,7 @@ $('#dataTables').dataTable({
 		{"mData": "NAMA_CABANG" },
 		{"mData": "NAMA_DIV" },
 		{"mData": "NAMA_JAB" },
+		{"mData": "LAZ_TASHARUF"},
 		{"mData": "ACTION", "sortable":false }
 	],
 	"sAjaxSource": "<?php echo base_url('employee/json_data');?>"
@@ -103,6 +117,36 @@ $('#divisi').change(function(){
 function doToggle(){	
 	("#entrystep").toggle();
 }
+
+$(document).ready(function(){
+  var dataTable = $('#dataTables').DataTable({
+    'processing': true,
+    'serverSide': true,
+    'serverMethod': 'post',
+    //'searching': false, // Remove default Search Control
+    'ajax': {
+       'url':'ajaxfile.php',
+       'data': function(data){
+          // Read values
+          var status = $('#statusFilter').val();
+
+          // Append to data
+          data.statusFilter = status;
+       }
+    },
+    'columns': [
+       { data: 'emp_name' }, 
+       { data: 'email' },
+       { data: 'gender' },
+       { data: 'salary' },
+       { data: 'city' },
+    ]
+  });
+
+  $('#statusFilter').change(function(){
+    dataTable.draw();
+  });
+});
 
 $(document).ready(function() {
 	$('#btsubmit_add').click(function(){ 		

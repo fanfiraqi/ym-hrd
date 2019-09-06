@@ -31,7 +31,7 @@ $role=$this->config->item('myrole');
 			<ul class="nav navbar-nav side-nav nicescroll-bar">
 			<li><hr class="light-grey-hr mb-10"/></li>
 			<li class="navigation-header">
-				<?php echo anchor("",'<div class="pull-left"><i class="fa fa-home mr-20"></i><span class="right-nav-text">Beranda</span></div>');?>
+				<?php echo anchor("",'<div class="pull-left"><i class="fa fa-home mr-20"></i><span class="right-nav-text">Beranda</span></div><div class="clearfix"></div>');?>
 			</li>
 			<li><hr class="light-grey-hr mb-10"/></li>
 			<?php if (in_array($role, [1,3, 66])){?>
@@ -65,7 +65,9 @@ $role=$this->config->item('myrole');
 							<li ><?php echo anchor('cuti/index','Permohonan Cuti/Ijin', ($mySubMenu=="mn22"?"class='active-page'":""));?></li>	
 							<li ><?php echo anchor('lembur/index','Permohonan Lembur', ($mySubMenu=="mn23"?"class='active-page'":""));?></li>	
 							<li ><?php echo anchor('mutasi/index','Riwayat/Mutasi', ($mySubMenu=="mn27"?"class='active-page'":""));?></li>
+							<?php if ($this->session->userdata('auth')->id_cabang=="1"){ ?>
 							<li ><?php echo anchor('resign/index','Resign/Berhenti', ($mySubMenu=="mn28"?"class='active-page'":""));?></li>
+							<?php } ?>
 				</ul>		
 					
 			</li>	
@@ -127,8 +129,9 @@ $role=$this->config->item('myrole');
 				</ul>
 			</li>
 			<li><hr class="light-grey-hr mb-10"/></li>
+			<li><small style="text-align:center; font-size:x-small;position: absolute; top: 130px; padding-left: 25px;">Best Running with Firefox @2018</small></li>
 			<?}?>
 			</ul>
-			<div  style="position:fixed; top:95%;z-index:1080;margin-left:20px;"><label  style="text-align:center; font-size:x-small;"><b>Best Running with Firefox @2018</b></label></div> 
+			<!-- <div  style="position:fixed; top:95%;z-index:1080;margin-left:20px;"><label  style="text-align:center; font-size:x-small;"><b>Best Running with Firefox @2018</b></label></div>  -->
 		</div>
 		<!-- /Left Sidebar Menu -->

@@ -1,4 +1,4 @@
-<p><?php echo anchor('resign/create','Form resign/PHK',array('id'=>'btsubmit','class'=>'btn btn-primary'));?> </p>
+<p><?php echo anchor('resign/create','Form Resign / PHK',array('id'=>'btsubmit','class'=>'btn btn-primary'));?> </p>
 <hr />
 <div class="row">
 	<div class="col-sm-6">

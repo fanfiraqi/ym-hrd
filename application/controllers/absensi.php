@@ -126,7 +126,7 @@ class absensi extends MY_App {
 			
 			$str = "SELECT p.NAMA,p.ID_JAB, p.ID_DIV,p.ID_CABANG, a.*
 				FROM absensi a, pegawai p
-				WHERE  a.nik=p.nik  ".($this->session->userdata('auth')->id_cabang>1?"  and p.id_cabang=".$this->session->userdata('auth')->id_cabang."  ":"  and p.id_cabang=".$cabang."  ");
+				WHERE  a.nik=p.nik  ".($this->session->userdata('auth')->id_cabang>1?"  and p.id_cabang=".$this->session->userdata('auth')->id_cabang."  ":"  and p.id_cabang=".$cabang." ORDER BY p.id_cabang DESC");
 			
 			if ( $_GET['sSearch'] != "" )
 			{
