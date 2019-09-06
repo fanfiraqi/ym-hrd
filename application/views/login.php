@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Login Page - HRD APPS  <?php if (isset($pagetitle)) echo ' - '.$pagetitle;?></title>
+    <title>Login Page - HRD Application  <?php if (isset($pagetitle)) echo ' - '.$pagetitle;?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('assets/loginstyle/bootstrap.css');?>" rel="stylesheet">
