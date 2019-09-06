@@ -1,0 +1,107 @@
+[18-Sep-2018 13:25:47 Asia/Jakarta] PHP Fatal error:  Call to a member function master_data() on null in /home/indosunn/public_html/ym-hrd/application/controllers/hrdReportRekapHRD.php on line 68
+[20-Dec-2018 08:55:30 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[20-Dec-2018 08:56:30 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[20-Dec-2018 08:57:30 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[20-Dec-2018 08:58:30 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[20-Dec-2018 08:59:30 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[20-Dec-2018 14:06:48 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[20-Dec-2018 14:06:51 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 13:32:20 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 13:33:20 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 13:34:20 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 13:35:20 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 13:36:20 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 14:41:58 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 16:16:12 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 16:17:12 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 16:18:12 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 16:19:12 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[21-Dec-2018 16:20:12 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[27-Dec-2018 09:24:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[27-Dec-2018 09:49:44 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[27-Dec-2018 09:49:50 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[27-Dec-2018 09:50:22 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[27-Dec-2018 13:19:59 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[27-Dec-2018 13:21:00 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[27-Dec-2018 13:21:59 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[28-Dec-2018 13:12:52 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[29-Dec-2018 09:19:32 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ',' in /home/indosunn/public_html/ym-hrd/application/views/fjabatan/create.php on line 20
+[29-Dec-2018 09:19:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ',' in /home/indosunn/public_html/ym-hrd/application/views/fjabatan/create.php on line 20
+[29-Dec-2018 09:19:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ',' in /home/indosunn/public_html/ym-hrd/application/views/fjabatan/create.php on line 20
+[29-Dec-2018 09:19:48 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ',' in /home/indosunn/public_html/ym-hrd/application/views/fjabatan/create.php on line 20
+[29-Dec-2018 09:20:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ',' in /home/indosunn/public_html/ym-hrd/application/views/fjabatan/create.php on line 20
+[29-Dec-2018 11:57:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ',' in /home/indosunn/public_html/ym-hrd/application/models/common_model.php on line 186
+[29-Dec-2018 11:57:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ',' in /home/indosunn/public_html/ym-hrd/application/models/common_model.php on line 186
+[29-Dec-2018 13:13:52 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<' in /home/indosunn/public_html/ym-hrd/application/views/fhrdReport/rekapResultMap.php on line 136
+[29-Dec-2018 13:18:27 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<' in /home/indosunn/public_html/ym-hrd/application/views/fhrdReport/rekapResultMap.php on line 136
+[29-Dec-2018 15:27:51 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[29-Dec-2018 15:28:07 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[29-Dec-2018 15:28:23 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[29-Dec-2018 15:54:25 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[29-Dec-2018 16:22:24 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[29-Dec-2018 19:43:11 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 08:49:34 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:09:38 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:09:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:09:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:09:47 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:10:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:10:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:11:38 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:11:39 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:11:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:11:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:12:38 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:12:39 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:12:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:12:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:13:38 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:13:39 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:13:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:13:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:14:38 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:14:39 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:14:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:14:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:15:00 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:15:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:16:46 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Dec-2018 19:34:50 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '(' in /home/indosunn/public_html/ym-hrd/application/controllers/resign.php on line 466
+[31-Dec-2018 10:00:21 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/indosunn/public_html/ym-hrd/application/views/absensi/rekap_absen_edit.php on line 98
+[31-Dec-2018 10:00:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/indosunn/public_html/ym-hrd/application/views/absensi/rekap_absen_edit.php on line 98
+[31-Dec-2018 10:07:42 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[31-Dec-2018 10:07:44 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[31-Dec-2018 10:09:16 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[31-Dec-2018 12:51:41 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[31-Dec-2018 12:51:41 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:00:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:01:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:02:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:03:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:04:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:05:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:06:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:07:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:08:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:09:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:10:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:11:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:12:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:13:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:14:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:15:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:16:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:17:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:18:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:19:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:20:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[01-Jan-2019 00:21:09 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[02-Jan-2019 21:05:25 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[04-Jan-2019 15:04:33 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[05-Jan-2019 03:05:10 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[07-Jan-2019 23:18:44 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[08-Jan-2019 22:28:10 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[09-Jan-2019 23:28:40 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[23-Jan-2019 13:33:05 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[30-Jan-2019 10:53:24 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
+[02-Feb-2019 16:48:15 Asia/Jakarta] PHP Fatal error:  Call to a member function item() on null in /home/indosunn/public_html/ym-hrd/application/libraries/auth.php on line 104
